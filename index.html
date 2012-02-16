@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html version="-//W3C//DTD XHTML 1.1//EN"
+      xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/1999/xhtml
+                          http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd">
+<head>
+<title>Bubble Breaker by Andrew Danks</title>
+<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" />
+<script type="text/javascript" src="bubble_breaker.js"></script>
+</head>
+
+<body>
+
+<h1>Bubble Breaker!</h1>
+
+<div id="actions">
+<p id="new_game"><input type="button" value="New Game" onclick="new_game()" /></p>
+<p id="time"><span id="time_elapsed">0.0</span></p>
+</div>
+
+<div id="bubble_breaker"></div>
+<div id="score_box" class="hide"><span id="score"></span><span id="to_add"></span></div>
+
+<div id="submit_score" class="hide">
+<h3>Game Over</h3>
+<p>Congratulations, you finished with a score of <span id="game_over_score"></span>. Enter your name below to enter the high scores!</p>
+<form method="get" action="/cgi-bin/topScore.pl">
+<p><label>Name: <input type="text" id="name" name="name" /></label></p>
+<input type="hidden" name="score" value="0" />
+<p><input type="submit" value="Submit Score" /></p>
+</form>
+</div>
+
+<script type="text/javascript">new_game()</script>
+</body>
+</html>

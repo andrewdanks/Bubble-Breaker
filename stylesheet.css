@@ -1,0 +1,94 @@
+body {
+    font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #111;
+    text-align: center;
+}
+
+#new_game {
+    text-align: center;
+    padding: 15px;
+}
+
+#new_game input {
+    width: 100px;
+    padding: 5px;
+}
+
+#time {
+    text-align: center;
+    color: #bbb;
+    font-size: 16px;
+}
+
+#score_box {
+    text-align: center;
+    margin: 100px 0 0 0;
+    clear: both;
+}
+
+#score {
+    font-size: 24px;
+}
+
+#to_add {
+    font-size: 16px;
+    color: red;
+}
+
+#submit_score {
+    opacity: 0.9;
+    background: #111;
+    color: #eee;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+#bubble_breaker {
+    margin: 10px auto;
+    width: 600px;
+    height: 250px;
+}
+
+#bubble_breaker .col {
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+#bubble_breaker .bubble {
+    opacity: 0.9;
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    border: 1px solid transparent;
+    vertical-align: bottom;
+}
+
+#bubble_breaker .bubble:hover { opacity: 1.0; }
+
+#bubble_breaker .group { border: 1px dotted #222; background-color: #bbb !important; }
+
+#bubble_breaker .none_top { border-top: 1px dotted transparent !important; }
+#bubble_breaker .none_right { border-right: 1px dotted transparent !important; }
+#bubble_breaker .none_bottom { border-bottom: 1px dotted transparent !important; }
+#bubble_breaker .none_left { border-left: 1px dotted transparent !important; }
+
+#bubble_breaker .yellow { cursor: pointer; background: url('images/yellow.png') no-repeat center center; }
+#bubble_breaker .red { cursor: pointer; background: url('images/red.png') no-repeat center center; }
+#bubble_breaker .blue { cursor: pointer; background: url('images/blue.png') no-repeat center center; }
+#bubble_breaker .purple { cursor: pointer; background: url('images/purple.png') no-repeat center center; }
+#bubble_breaker .green { cursor: pointer; background: url('images/green.png') no-repeat center center; }
+
+.hide { display: none; }
+
